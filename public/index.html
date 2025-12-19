@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Future of Micropayments</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts for premium typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">DailyProtocol</div>
+      <nav>
+        <span>Journal</span>
+        <span>About</span>
+        <span class="user-balance">Wallet: $4.50</span>
+      </nav>
+    </header>
+
+    <main class="article-container">
+      <div id="loading" class="loading-state">
+        <div class="spinner"></div>
+      </div>
+
+      <article id="article-content" class="hidden">
+        <div class="meta">December 19, 2025 • Technology</div>
+        <h1 id="article-title"></h1>
+        <div class="author-block">
+          <div class="avatar"></div>
+          <div class="author-info">
+            <span class="name">Elena Code</span>
+            <span class="role">Protocol Researcher</span>
+          </div>
+        </div>
+
+        <div id="article-body">
+          <!-- Content will be injected here -->
+        </div>
+
+        <div id="paywall-overlay" class="paywall-container hidden">
+          <div class="paywall-content">
+            <div class="lock-icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5978 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <h3>Unlock Full Article</h3>
+            <p>Support independent research with a micropayment.</p>
+            <div class="price-tag">0.01 USD</div>
+            <button id="pay-btn" class="pay-button">
+              <span class="btn-text">Pay Instantly</span>
+              <div class="loader hidden"></div>
+            </button>
+            <div class="wallet-info">via x402-Wallet</div>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <script src="client.js"></script>
+  </body>
+</html>
